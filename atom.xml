@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>PANDA</title>
+  
+  <subtitle>better</subtitle>
+  <link href="http://371606879.git.io/atom.xml" rel="self"/>
+  
+  <link href="http://371606879.git.io/"/>
+  <updated>2020-10-25T16:14:34.868Z</updated>
+  <id>http://371606879.git.io/</id>
+  
+  <author>
+    <name>wu xi</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于admin图片不能显示的解决方法</title>
+    <link href="http://371606879.git.io/2020/102652089.html"/>
+    <id>http://371606879.git.io/2020/102652089.html</id>
+    <published>2020-10-25T16:09:00.000Z</published>
+    <updated>2020-10-25T16:14:34.868Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;转载https-blog-csdn-net-nineya-com-article-details-103384546&quot;&gt;&lt;a href=&quot;#转载https-blog-csdn-net-nineya-com-article-details-103384546&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="http://371606879.git.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="http://371606879.git.io/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test3</title>
+    <link href="http://371606879.git.io/2020/10262360.html"/>
+    <id>http://371606879.git.io/2020/10262360.html</id>
+    <published>2020-10-25T16:05:00.000Z</published>
+    <updated>2020-10-25T16:08:18.036Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;原文地址&lt;br&gt;&lt;img src=&quot;/images/pasted-4.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="http://371606879.git.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="http://371606879.git.io/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>onine test</title>
+    <link href="http://371606879.git.io/2020/102541528.html"/>
+    <id>http://371606879.git.io/2020/102541528.html</id>
+    <published>2020-10-25T15:14:00.000Z</published>
+    <updated>2020-10-25T16:00:23.114Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;this is a oneline test&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="http://371606879.git.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="http://371606879.git.io/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>onine test2</title>
+    <link href="http://371606879.git.io/2020/10251826.html"/>
+    <id>http://371606879.git.io/2020/10251826.html</id>
+    <published>2020-10-25T15:14:00.000Z</published>
+    <updated>2020-10-25T15:32:31.193Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;demo test&lt;br&gt;A. Matrix Game&lt;br&gt;*&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Author:  heyuhhh&lt;/li&gt;
+&lt;li&gt;Created Time:  2020/6/7 22:39:24&lt;/li&gt;
+&lt;li&gt;/&lt;br&gt;#include</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="http://371606879.git.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="http://371606879.git.io/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My New Post</title>
+    <link href="http://371606879.git.io/2020/101222554.html"/>
+    <id>http://371606879.git.io/2020/101222554.html</id>
+    <published>2020-10-11T16:16:00.000Z</published>
+    <updated>2020-10-25T16:17:11.562Z</updated>
+    
+    
+    
+    
+    <category term="test" scheme="http://371606879.git.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="http://371606879.git.io/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://371606879.git.io/2020/101116107.html"/>
+    <id>http://371606879.git.io/2020/101116107.html</id>
+    <published>2020-10-11T14:32:00.000Z</published>
+    <updated>2020-10-25T16:16:54.074Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="http://371606879.git.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="http://371606879.git.io/tags/test/"/>
+    
+  </entry>
+  
+</feed>
