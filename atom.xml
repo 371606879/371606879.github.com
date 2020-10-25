@@ -6,7 +6,7 @@
   <link href="http://371606879.git.io/atom.xml" rel="self"/>
   
   <link href="http://371606879.git.io/"/>
-  <updated>2020-10-25T16:14:34.868Z</updated>
+  <updated>2020-10-25T18:01:34.485Z</updated>
   <id>http://371606879.git.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pull test</title>
+    <link href="http://371606879.git.io/2020/102636008.html"/>
+    <id>http://371606879.git.io/2020/102636008.html</id>
+    <published>2020-10-25T17:51:00.000Z</published>
+    <updated>2020-10-25T18:01:34.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;just a</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="http://371606879.git.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="http://371606879.git.io/tags/test/"/>
+    
+  </entry>
   
   <entry>
     <title>关于admin图片不能显示的解决方法</title>

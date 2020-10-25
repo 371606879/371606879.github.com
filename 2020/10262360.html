@@ -139,58 +139,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="" class="waves-effect waves-light">
-
-      
-      <i class="fas fa-list" style="zoom: 0.6;"></i>
-      
-      <span>Medias</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
-    </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/musics">
-          
-          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Musics</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/movies">
-          
-          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Movies</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/books">
-          
-          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Books</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/galleries">
-          
-          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Galleries</span>
-        </a>
-      </li>
-      
-    </ul>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -291,57 +239,6 @@
 			
 			友情链接
 		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="javascript:;">
-			
-				<i class="fa-fw fas fa-list"></i>
-			
-			Medias
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
-		</a>
-            <ul  style="background:  ;" >
-              
-                <li>
-                  <a href="/musics " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Musics</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/movies " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Movies</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/books " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Books</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/galleries " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Galleries</span>
-                  </a>
-                </li>
-              
-            </ul>
           
         </li>
         
@@ -630,13 +527,13 @@ fs.writeFile(outpath, buf, function (err) &#123;
 <p>5.3优化3：添加按文章存储图片功能（方便管理）<br>原本系统默认将图片统一存储在“images”目录下，文章一多，图片数量疯涨，就不容易维护，所以我添加了按文章存储图片的功能，图片将存储在与文章同目录的同名文件夹下。<br>在这里插入图片描述<br>只需要在设置界面，勾选“图片存储在资源目录下”选项即可，取消勾选则将图片存放在hexo-admin定义的存储目录下。在这里插入图片描述</p>
 <p>5.4优化4：修复了编辑界面预览链接错误bug<br>原本“分页”的编辑界面的预览链接是错误的，跳转的页面不正确，这里也修复了一下。<br>在这里插入图片描述</p>
 <p>5.5优化5：修复了新建分页失败bug<br>最初新建分页无法点击确定时会提示如下错误，并且界面没有反应。但是刷新之后可以看到分页是新建成功的，就是有点麻烦，要刷新。</p>
-<p>Unhandled rejection TypeError: Cannot read property ‘source’ of undefined<br>    at addIsDraft (G:\blog\node_modules_<a href="mailto:&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x61;&#100;&#109;&#105;&#x6e;&#64;&#50;&#46;&#x33;&#46;&#48;">&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x61;&#100;&#109;&#105;&#x6e;&#64;&#50;&#46;&#x33;&#46;&#48;</a>@hexo-admin\api.js:14:25)<br>    at G:\blog\node_modules_<a href="mailto:&#104;&#x65;&#120;&#111;&#45;&#97;&#x64;&#x6d;&#105;&#110;&#x40;&#50;&#x2e;&#x33;&#46;&#48;">&#104;&#x65;&#120;&#111;&#45;&#97;&#x64;&#x6d;&#105;&#110;&#x40;&#50;&#x2e;&#x33;&#46;&#48;</a>@hexo-admin\api.js:218:18<br>    at tryCatcher (G:\blog\node_modules\bluebird\js\release\util.js:16:23)<br>    at Promise._settlePromiseFromHandler (G:\blog\node_modules\bluebird\js\release\promise.js:547:31)<br>    at Promise._settlePromise (G:\blog\node_modules\bluebird\js\release\promise.js:604:18)<br>    at Promise._settlePromise0 (G:\blog\node_modules\bluebird\js\release\promise.js:649:10)<br>    at Promise._settlePromises (G:\blog\node_modules\bluebird\js\release\promise.js:729:18)<br>    at Promise._fulfill (G:\blog\node_modules\bluebird\js\release\promise.js:673:18)<br>    at Promise._resolveCallback (G:\blog\node_modules\bluebird\js\release\promise.js:466:57)<br>    at Promise._settlePromiseFromHandler (G:\blog\node_modules\bluebird\js\release\promise.js:559:17)<br>    at Promise._settlePromise (G:\blog\node_modules\bluebird\js\release\promise.js:604:18)<br>    at Promise._settlePromise0 (G:\blog\node_modules\bluebird\js\release\promise.js:649:10)<br>    at Promise._settlePromises (G:\blog\node_modules\bluebird\js\release\promise.js:725:18)<br>    at _drainQueueStep (G:\blog\node_modules\bluebird\js\release\async.js:93:12)<br>    at _drainQueue (G:\blog\node_modules\bluebird\js\release\async.js:86:9)<br>    at Async._drainQueues (G:\blog\node_modules\bluebird\js\release\async.js:102:5)<br>    at Immediate.Async.drainQueues [as _onImmediate] (G:\blog\node_modules\bluebird\js\release\async.js:15:14)<br>    at processImmediate (internal/timers.js:439:21)<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>修复之后该功能可以正常使用，但是还是会提示另一个错误，我弄了好久，没办法解决，等待懂的大佬教教我。</p>
+<p>Unhandled rejection TypeError: Cannot read property ‘source’ of undefined<br>    at addIsDraft (G:\blog\node_modules_<a href="mailto:&#104;&#x65;&#x78;&#x6f;&#x2d;&#x61;&#100;&#x6d;&#x69;&#110;&#64;&#x32;&#46;&#51;&#x2e;&#48;">&#104;&#x65;&#x78;&#x6f;&#x2d;&#x61;&#100;&#x6d;&#x69;&#110;&#64;&#x32;&#46;&#51;&#x2e;&#48;</a>@hexo-admin\api.js:14:25)<br>    at G:\blog\node_modules_<a href="mailto:&#104;&#x65;&#x78;&#x6f;&#45;&#x61;&#x64;&#x6d;&#x69;&#110;&#x40;&#50;&#46;&#x33;&#x2e;&#48;">&#104;&#x65;&#x78;&#x6f;&#45;&#x61;&#x64;&#x6d;&#x69;&#110;&#x40;&#50;&#46;&#x33;&#x2e;&#48;</a>@hexo-admin\api.js:218:18<br>    at tryCatcher (G:\blog\node_modules\bluebird\js\release\util.js:16:23)<br>    at Promise._settlePromiseFromHandler (G:\blog\node_modules\bluebird\js\release\promise.js:547:31)<br>    at Promise._settlePromise (G:\blog\node_modules\bluebird\js\release\promise.js:604:18)<br>    at Promise._settlePromise0 (G:\blog\node_modules\bluebird\js\release\promise.js:649:10)<br>    at Promise._settlePromises (G:\blog\node_modules\bluebird\js\release\promise.js:729:18)<br>    at Promise._fulfill (G:\blog\node_modules\bluebird\js\release\promise.js:673:18)<br>    at Promise._resolveCallback (G:\blog\node_modules\bluebird\js\release\promise.js:466:57)<br>    at Promise._settlePromiseFromHandler (G:\blog\node_modules\bluebird\js\release\promise.js:559:17)<br>    at Promise._settlePromise (G:\blog\node_modules\bluebird\js\release\promise.js:604:18)<br>    at Promise._settlePromise0 (G:\blog\node_modules\bluebird\js\release\promise.js:649:10)<br>    at Promise._settlePromises (G:\blog\node_modules\bluebird\js\release\promise.js:725:18)<br>    at _drainQueueStep (G:\blog\node_modules\bluebird\js\release\async.js:93:12)<br>    at _drainQueue (G:\blog\node_modules\bluebird\js\release\async.js:86:9)<br>    at Async._drainQueues (G:\blog\node_modules\bluebird\js\release\async.js:102:5)<br>    at Immediate.Async.drainQueues [as _onImmediate] (G:\blog\node_modules\bluebird\js\release\async.js:15:14)<br>    at processImmediate (internal/timers.js:439:21)<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>修复之后该功能可以正常使用，但是还是会提示另一个错误，我弄了好久，没办法解决，等待懂的大佬教教我。</p>
 <p>Unhandled rejection WarehouseError: ID <code>source/444444/index.md</code> has been used<br>    at new WarehouseError (G:\blog\node_modules\warehouse\lib\error.js:14:11)<br>    at _Model._insertOne (G:\blog\node_modules\warehouse\lib\model.js:153:29)<br>    at G:\blog\node_modules\warehouse\lib\model.js:179:63<br>    at tryCatcher (G:\blog\node_modules\bluebird\js\release\util.js:16:23)<br>    at G:\blog\node_modules\bluebird\js\release\using.js:185:26<br>    at tryCatcher (G:\blog\node_modules\bluebird\js\release\util.js:16:23)<br>    at Promise._settlePromiseFromHandler (G:\blog\node_modules\bluebird\js\release\promise.js:547:31)<br>    at Promise._settlePromise (G:\blog\node_modules\bluebird\js\release\promise.js:604:18)<br>    at Promise._settlePromise0 (G:\blog\node_modules\bluebird\js\release\promise.js:649:10)<br>    at Promise._settlePromises (G:\blog\node_modules\bluebird\js\release\promise.js:729:18)<br>    at Promise._fulfill (G:\blog\node_modules\bluebird\js\release\promise.js:673:18)<br>    at PromiseArray._resolve (G:\blog\node_modules\bluebird\js\release\promise_array.js:127:19)<br>    at PromiseArray._promiseFulfilled (G:\blog\node_modules\bluebird\js\release\promise_array.js:145:14)<br>    at Promise._settlePromise (G:\blog\node_modules\bluebird\js\release\promise.js:609:26)<br>    at Promise._settlePromise0 (G:\blog\node_modules\bluebird\js\release\promise.js:649:10)<br>    at Promise._settlePromises (G:\blog\node_modules\bluebird\js\release\promise.js:729:18)<br>    at _drainQueueStep (G:\blog\node_modules\bluebird\js\release\async.js:93:12)<br>    at _drainQueue (G:\blog\node_modules\bluebird\js\release\async.js:86:9)<br>    at Async._drainQueues (G:\blog\node_modules\bluebird\js\release\async.js:102:5)<br>    at Immediate.Async.drainQueues [as _onImmediate] (G:\blog\node_modules\bluebird\js\release\async.js:15:14)<br>    at processImmediate (internal/timers.js:439:21)<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>5.6补丁下载地址<br>使用方法<br>打开博客目录下的“\node_modules\hexo-admin”目录，全选复制所有补丁覆盖原文件即可。</p>
 <p>注意<br>我使用的是hexo-admin 2.3.0版本，其他版本补丁覆盖之后可能会有问题，可能会有问题，没有测试。</p>
 <p>如果使用的和我不是同一个版本，建议先卸载插件，然后再重新添加和我同个版本的hexo-admin，这样就不会有问题。</p>
 <p>卸载hexo-admin：</p>
 <p>npm uninstall hexo-admin –save<br>1<br>重新安装2.3.0版本</p>
-<p>npm install <a href="mailto:&#x68;&#x65;&#120;&#x6f;&#x2d;&#97;&#100;&#x6d;&#105;&#110;&#64;&#x32;&#x2e;&#51;&#x2e;&#x30;">&#x68;&#x65;&#120;&#x6f;&#x2d;&#97;&#100;&#x6d;&#105;&#110;&#64;&#x32;&#x2e;&#51;&#x2e;&#x30;</a> –save<br>1<br>然后覆盖插件。</p>
+<p>npm install <a href="mailto:&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x61;&#x64;&#109;&#105;&#x6e;&#64;&#50;&#46;&#x33;&#46;&#48;">&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x61;&#x64;&#109;&#105;&#x6e;&#64;&#50;&#46;&#x33;&#46;&#48;</a> –save<br>1<br>然后覆盖插件。</p>
 <p>下载链接：链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/19nJyISHiUEWc4KgrmrXyuw">https://pan.baidu.com/s/19nJyISHiUEWc4KgrmrXyuw</a><br>提取码：t3r0</p>
 <p>6.总结<br>弄这个插件耗费我一整天时间，做了一些些优化，目前本人用着还好，没有发现什么问题。有不清楚的地方欢迎评论留言，看到的我都会回复的。本文到此结束，有什么不足的地方请大家不吝指正。</p>
 
