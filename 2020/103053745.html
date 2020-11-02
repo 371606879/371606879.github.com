@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="onine test, better">
+    <meta name="keywords" content="java实验2, better">
     <meta name="description" content="swuster">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>onine test | better</title>
+    <title>java实验2 | better</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">onine test</h1>
+                    <h1 class="description center-align post-title">java实验2</h1>
                 </div>
             </div>
         </div>
@@ -440,25 +440,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/test/">
-                                <span class="chip bg-color">test</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/test/" class="post-category">
-                                test
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -467,7 +454,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-25
+                    2020-10-30
                 </div>
                 
 
@@ -483,14 +470,88 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>this is a oneline test<br><a target="_blank" rel="noopener" href="https://img-blog.csdnimg.cn/20190805080838839.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64">https://img-blog.csdnimg.cn/20190805080838839.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64</a></p>
-<p><img src="%5Cimages%5Cpasted-1.png%5C" alt="upload successful"><br><img src="%5Cimages%5Cpasted-2.png%5C" alt="upload successful"><br><img src="%5Cimages%5Cpasted-3.png%5C" alt="upload successful"># 这个是标题</p>
-<p><code>#include&lt;bits/std++.h&gt;</code></p>
-<p><code>using namespace std;</code></p>
-<p><code>int main()&#123;</code></p>
-<p>​    <code>cout&lt;&lt;&quot;this is demo&quot;;</code></p>
-<p><code>&#125;</code></p>
-<p><img src="E:\图片\margin.jpg" alt="margin"></p>
+                <h1 id="java实验二"><a href="#java实验二" class="headerlink" title="java实验二"></a>java实验二</h1><h2 id="要求：java实现时钟"><a href="#要求：java实现时钟" class="headerlink" title="要求：java实现时钟"></a>要求：java实现时钟</h2><h3 id="分析：一个点是怎么样画时钟，一个点时数字转化为指针需要的处理"><a href="#分析：一个点是怎么样画时钟，一个点时数字转化为指针需要的处理" class="headerlink" title="分析：一个点是怎么样画时钟，一个点时数字转化为指针需要的处理"></a>分析：一个点是怎么样画时钟，一个点时数字转化为指针需要的处理</h3><pre class="line-numbers language-none"><code class="language-none">package timer1;
+import java.util.*;&#x2F;&#x2F;获取时间
+import java.applet.Applet;&#x2F;&#x2F;小程序
+import javax.swing.JLabel;&#x2F;&#x2F;？？？多余的
+import java.awt.Graphics;&#x2F;&#x2F;画图
+
+
+public class Clock extends Applet&#123;
+	int x&#x3D;0,y&#x3D;0,r&#x3D;100;
+	int h,m,s;
+	double rad&#x3D; Math.PI&#x2F;180;	
+    public void init()&#123;
+    	&#x2F;&#x2F;获取时间
+        Calendar now &#x3D; new GregorianCalendar();
+        s &#x3D; now.get(Calendar.SECOND) * 6; 
+        m &#x3D; now.get(Calendar.MINUTE) * 6;
+        h &#x3D; now.get(Calendar.HOUR) * 30 + now.get(Calendar.MINUTE) &#x2F; 12 * 6; 
+		&#x2F;&#x2F;计时器timer 以及更新时钟
+    	Timer timer &#x3D;new Timer();
+     	timer.schedule(new TimerTask() &#123;
+    		public void run() &#123;
+    			s+&#x3D;6;
+    			if (m &#x3D;&#x3D; 72 || m &#x3D;&#x3D; 144 || m &#x3D;&#x3D; 288) &#123;
+    				h +&#x3D; 6;
+    			&#125;	
+    			if (m &gt;&#x3D; 360) &#123;
+    				m &#x3D; 0;
+    				h +&#x3D; 6;
+    			&#125;
+    			if (h &gt;&#x3D; 360) &#123;
+    				h &#x3D; 0;
+    			&#125;   
+    			repaint();
+    			&#125;
+     		&#125;, 1000,1000);   		
+    		
+    	&#125;  
+    public void paint(Graphics g) &#123;
+    &#x2F;&#x2F;时钟的绘制 
+        g.drawOval(x, y, r * 2, r * 2);
+        int x1 &#x3D; (int) (90 * Math.sin(rad * s));
+        int y1 &#x3D; (int) (90 * Math.cos(rad * s));
+        g.drawLine(r, r, r + x1, r - y1);
+        x1 &#x3D; (int) (80 * Math.sin(rad * m));
+        y1 &#x3D; (int) (80 * Math.cos(rad * m));
+        g.drawLine(r, r, r + x1, r - y1);
+        x1 &#x3D; (int) (60 * Math.sin(rad * h));
+        y1 &#x3D; (int) (60 * Math.cos(rad * h));
+        g.drawLine(r, r, r + x1, r - y1);
+        int d &#x3D; 30;
+        for (int i &#x3D; 1; i &lt;&#x3D; 12; i++) &#123;
+            x1 &#x3D; (int) ((r - 10) * Math.sin(rad * d));
+            y1 &#x3D; (int) ((r - 10) * Math.cos(rad * d));
+            g.drawString(i + &quot;&quot;, r + x1, r - y1);
+            d +&#x3D; 30;
+        &#125;
+        d &#x3D; 0;
+        for (int i &#x3D; 1; i &lt;&#x3D; 60; i++) &#123;
+            x1 &#x3D; (int) ((r - 2) * Math.sin(rad * d));
+            y1 &#x3D; (int) ((r - 2) * Math.cos(rad * d));
+            g.drawString(&quot;.&quot;, r + x1, r - y1);
+            d +&#x3D; 6;
+        &#125;   	 
+    &#125;
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><pre class="line-numbers language-none"><code class="language-none">package timer1;
+
+import java.awt.Graphics;
+
+public class Run &#123;
+	public static void main(Graphics g) &#123;
+&#x2F;&#x2F;		Graphics g &#x3D; new Graphics g;
+		g.create(0,0,300,300);
+		Clock clock &#x3D; new Clock();
+		clock.init();
+		clock.paint(g);
+	&#125;
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
             </div>
             <hr/>
@@ -516,7 +577,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://371606879.git.io/2020/102541528.html">http://371606879.git.io/2020/102541528.html</a>
+                    <a href="http://371606879.git.io/2020/103053745.html">http://371606879.git.io/2020/103053745.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -553,11 +614,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/test/">
-                                    <span class="chip bg-color">test</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -726,7 +783,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-10-25T23-14-00',
+        id: '2020-10-30T17-25-22',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -750,7 +807,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Sun Oct 25 2020 23:14:00 GMT+0800',
+    id: 'Fri Oct 30 2020 17:25:22 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -775,9 +832,9 @@ gitment.render('gitment-content');
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://371606879.git.io/2020/102541528.html';
-        this.page.identifier = '/2020/102541528.html';
-        this.page.title = 'onine test';
+        this.page.url = 'http://371606879.git.io/2020/103053745.html';
+        this.page.identifier = '/2020/103053745.html';
+        this.page.title = 'java实验2';
     };
     let disqus_shortname = '';
 
@@ -825,66 +882,18 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/10262360.html">
+                <a href="/2020/103053745.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="test3">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java实验2">
                         
-                        <span class="card-title">test3</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-26
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/test/" class="post-category">
-                                    test
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/test/">
-                        <span class="chip bg-color">test</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/10251826.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="onine test2">
-                        
-                        <span class="card-title">onine test2</span>
+                        <span class="card-title">java实验2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -895,16 +904,50 @@ gitment.render('gitment-content');
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-30
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            <i class="fas fa-user fa-fw"></i>
+                            wu xi
                             
-                            <a href="/categories/test/" class="post-category">
-                                    test
-                                </a>
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/103053425.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="java实验1">
+                        
+                        <span class="card-title">java实验1</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
                             
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            wu xi
                             
                         </span>
                     </div>
@@ -912,8 +955,8 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/test/">
-                        <span class="chip bg-color">test</span>
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
                 </div>
